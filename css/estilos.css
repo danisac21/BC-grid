@@ -357,8 +357,17 @@ footer{
     nav .menu-btn {
         display: block;
         margin-bottom: 0.8rem;
-        
+        font-size: 1rem;
     }
+    nav .menu-btn .svg-inline--fa {
+        display: inline-block;
+        font-size: 1.8rem;
+        height: 1em;
+        overflow: visible;
+        vertical-align: -.125em;
+        margin-top: 1rem;
+    }
+
     #click:checked ~ .menu-btn i:before{
         content: "\f00d";
     }
@@ -400,7 +409,7 @@ footer{
 
 @media (max-width: 767px) {
     nav .menu-btn {
-        font-size: 70%;
+        font-size: 1rem;
         display: block;
         margin-bottom: 0.8rem;
     }
