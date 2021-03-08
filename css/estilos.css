@@ -79,7 +79,7 @@ input[type="checkbox"]{
     max-width: 1100px;
     height: 100%;
     margin: auto;
-    gap: 10px;
+    /*gap: 10px;*/
     overflow: hidden;
     align-items: center;
 }
@@ -325,6 +325,44 @@ footer{
     }
 }
 
+@media screen and (max-width:800px) {
+    .header-nos {
+        height: 80vh !important;
+    }
+    .servicios-nos {
+        padding: 7% 0 !important;
+    }
+    .img-nos, .img3-nos {
+        display: none;
+    }
+    .text-nos, .text3-nos {
+        grid-column: 1/-1 !important;
+    }
+    .text-nos, .text2-nos, .text3-nos, .text4-nos {
+        padding: 2rem 2rem !important;
+        font-size: 86%;
+    }
+}
+@media screen and (max-width: 679px) {
+    .tit-nos .btn {
+        display: none;
+    }
+}
+@media screen and (max-width: 550px) {
+    .tit-nos h1 {
+        font-size: 2.5rem !important;
+    }
+    .tit-nos p {
+        padding: 1rem !important;
+    }
+    .serv-img {
+        display: none;
+    }
+    .text2-nos, .text4-nos {
+        grid-column: 1/-1 !important;
+    }
+}
+
 @media screen and (max-width:400px) {
     .sub-footer {
         font-size: 1.3rem;
@@ -415,6 +453,6 @@ footer{
     }
     
     .logo {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }   
 }

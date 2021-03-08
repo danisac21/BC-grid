@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'Bavista';
+  src: url(../font/Bavista_Soulare.ttf); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f7f7f7; }
+
+.header-nos {
+  padding-top: 110px;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 50%, #000000 100%), url("../assets/img/portada-nosotros.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover; }
+
+.tit-nos {
+  grid-column: 1/-1;
+  text-align: center; }
+  .tit-nos h1 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: 500;
+    letter-spacing: 0.8rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text; }
+  .tit-nos p {
+    color: rgba(255, 255, 255, 0.5);
+    padding: 1rem 10rem;
+    font-size: 1.2rem; }
+  .tit-nos .btn {
+    margin: 0;
+    font-family: "Varela Round";
+    text-transform: uppercase;
+    font-size: 80%;
+    letter-spacing: 0.15rem; }
+
+.servicios-nos {
+  height: auto;
+  background-color: #f7f7f7;
+  padding: 80px 0;
+  grid-column: 1/-1;
+  overflow: hidden;
+  /*background: linear-gradient(180deg, $crema 50%, $verde-oscuro 50%);*/ }
+  .servicios-nos img {
+    width: 100%; }
+
+.serv-img {
+  grid-column: 1/7;
+  width: 100%;
+  height: 100%; }
+
+.v2 {
+  grid-column: 7/13;
+  background-size: cover;
+  background-position: right; }
+
+.img-nos {
+  background-image: url(../assets/img/maquina-nosotros.jpg);
+  background-size: auto; }
+
+.img2-nos {
+  grid-row: 2/3;
+  background-image: url(../assets/img/chica-cafe-nosotros.jpg); }
+
+.img3-nos {
+  grid-row: 3/4;
+  background-image: url(../assets/img/chico-barista-nosotros.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.img4-nos {
+  grid-row: 4/5;
+  background-image: url(../assets/img/sucursal-2.jpg); }
+
+.serv-txt {
+  width: 100%;
+  height: 100%;
+  padding: 10rem 2rem;
+  color: #f7f7f7; }
+  .serv-txt h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0; }
+  .serv-txt hr {
+    border-color: #64a19d;
+    border-width: 0.25rem;
+    width: 30%;
+    margin-top: 1rem;
+    border-top: 1px solid #64a19d; }
+
+.text-nos, .text3-nos {
+  grid-column: 7/13;
+  background-color: #40315e; }
+
+.text2-nos, .text4-nos {
+  grid-column: 1/7;
+  background-color: #004a52;
+  text-align: right; }
+  .text2-nos hr, .text4-nos hr {
+    margin-left: auto; }
+
+.header-prod {
+  height: 100vh;
+  padding-top: 110px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 50%, #000000 100%), url("../assets/img/chico-barista-nosotros.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover; }
+  .header-prod .text-prod {
+    grid-column: 1/-1;
+    text-align: center;
+    color: #f7f7f7; }
+    .header-prod .text-prod .btn {
+      margin-left: 0; }
+    .header-prod .text-prod h1 {
+      margin: 1rem;
+      text-transform: uppercase;
+      font-size: 3.5rem;
+      font-weight: 500;
+      letter-spacing: 0.8rem;
+      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9));
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text; }
+    .header-prod .text-prod p {
+      padding: 0 40px;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 1.2rem; }
