@@ -123,7 +123,6 @@ img {
 }
 
 .btn {
-    width: 130px;
     background-color: #004a52;
     color: #f7f7f7;
     display: inline-block;
@@ -133,6 +132,10 @@ img {
     text-decoration: none;
     margin-top: 1rem;
     margin-left: 10rem;
+    font-family: "Varela Round";
+    text-transform: uppercase;
+    font-size: 80%;
+    letter-spacing: 0.15rem;
 }
 
 .btn:hover {
@@ -326,7 +329,7 @@ footer{
 }
 
 @media screen and (max-width:800px) {
-    .header-nos {
+    .head {
         height: 80vh !important;
     }
     .servicios-nos {
@@ -344,15 +347,15 @@ footer{
     }
 }
 @media screen and (max-width: 679px) {
-    .tit-nos .btn {
+    .tit-head .btn {
         display: none;
     }
 }
 @media screen and (max-width: 550px) {
-    .tit-nos h1 {
-        font-size: 2.5rem !important;
+    .tit-head h1 {
+        font-size: 2.1rem !important;
     }
-    .tit-nos p {
+    .tit-head p {
         padding: 1rem !important;
     }
     .serv-img {
@@ -363,7 +366,7 @@ footer{
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:430px) {
     .sub-footer {
         font-size: 1.3rem;
     } 

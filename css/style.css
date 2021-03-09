@@ -11,7 +11,7 @@ body {
   font-family: 'Quicksand', sans-serif;
   background-color: #f7f7f7; }
 
-.header-nos {
+.head {
   padding-top: 110px;
   height: 100vh;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 50%, #000000 100%), url("../assets/img/portada-nosotros.jpg");
@@ -20,10 +20,10 @@ body {
   background-attachment: scroll;
   background-size: cover; }
 
-.tit-nos {
+.tit-head {
   grid-column: 1/-1;
   text-align: center; }
-  .tit-nos h1 {
+  .tit-head h1 {
     text-transform: uppercase;
     font-size: 3.5rem;
     font-weight: 500;
@@ -32,11 +32,11 @@ body {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text; }
-  .tit-nos p {
+  .tit-head p {
     color: rgba(255, 255, 255, 0.5);
     padding: 1rem 10rem;
     font-size: 1.2rem; }
-  .tit-nos .btn {
+  .tit-head .btn {
     margin: 0;
     font-family: "Varela Round";
     text-transform: uppercase;
@@ -108,30 +108,108 @@ body {
     margin-left: auto; }
 
 .header-prod {
-  height: 100vh;
-  padding-top: 110px;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 50%, #000000 100%), url("../assets/img/chico-barista-nosotros.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover; }
+  background-position: center; }
   .header-prod .text-prod {
     grid-column: 1/-1;
     text-align: center;
     color: #f7f7f7; }
     .header-prod .text-prod .btn {
-      margin-left: 0; }
+      margin-left: 0;
+      width: auto; }
     .header-prod .text-prod h1 {
-      margin: 1rem;
-      text-transform: uppercase;
-      font-size: 3.5rem;
-      font-weight: 500;
-      letter-spacing: 0.8rem;
-      background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9));
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-      background-clip: text; }
+      margin: 1rem; }
     .header-prod .text-prod p {
-      padding: 0 40px;
-      color: rgba(255, 255, 255, 0.5);
-      font-size: 1.2rem; }
+      padding: 0 40px; }
+
+.section-prod {
+  padding: 4rem 0;
+  height: 100%; }
+
+.txt-prod {
+  grid-column: 9/13;
+  grid-row: 1/-1; }
+
+.texto-prod h3 {
+  font-weight: 600;
+  font-size: 1.5rem; }
+
+.texto-prod p {
+  padding-top: 10px;
+  color: #313131;
+  font-size: 1rem; }
+
+.img-prod {
+  grid-column: 1/9;
+  grid-row: 1/-1; }
+
+.featured-text {
+  padding: 0 0 0 1rem;
+  border-left: 0.4rem solid #64a19d; }
+
+.galeria-prod {
+  height: auto;
+  background: linear-gradient(180deg, #f7f7f7 50%, #004a52 50%); }
+
+.menu-prod {
+  grid-column: 1/-1;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow: hidden; }
+
+.menu-img {
+  width: 24%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden; }
+  .menu-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.hover {
+  width: 0%;
+  height: 100%;
+  background-color: #55888496;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: .5s all; }
+  .hover h1 {
+    color: #f7f7f7;
+    text-shadow: 1px 1px 1px black;
+    font-size: 2rem;
+    text-transform: uppercase; }
+
+.menu-img:hover .hover {
+  width: 100%; }
+
+@media screen and (max-width: 767px) {
+  .txt-prod {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    display: flex;
+    padding: 1rem 0; }
+  .img-prod {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center; }
+  .section-prod {
+    padding: 4rem 0 0 0; }
+  .galeria-prod {
+    background: #004a52;
+    padding-top: 4rem; }
+  .menu-img {
+    width: 42%;
+    height: auto;
+    margin-bottom: 2rem;
+    border-radius: 0px; } }

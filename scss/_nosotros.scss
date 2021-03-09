@@ -1,4 +1,4 @@
-.header-nos {
+.head {
     padding-top: 110px;
     height: 100vh;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 50%, #000000 100%), url("../assets/img/portada-nosotros.jpg");
@@ -8,7 +8,7 @@
     background-size: cover;
 }
 
-.tit-nos {
+.tit-head {
     grid-column: 1/-1;
     text-align: center;
         h1 {
