@@ -212,4 +212,6 @@ body {
     width: 42%;
     height: auto;
     margin-bottom: 2rem;
-    border-radius: 0px; } }
+    border-radius: 0px; }
+  .hover h1 {
+    font-size: 1.3rem; } }
