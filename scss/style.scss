@@ -4,3 +4,42 @@
 @import "productos";
 @import "cafeterias";
 @import "contacto";
+
+// HOME //
+.header-home {
+    padding-top: 110px;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 50%, #000000 100%), url("/assets/img/portada3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.tit-home {
+    grid-column: 1/-1;
+    text-align: center;
+        h1 {
+            text-transform: uppercase;
+            font-size: 4.5rem;
+            font-weight: 500;
+            letter-spacing: 0.8rem;
+            background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1));
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+                background-clip: text;
+        }
+        p {
+            color: $tw-50;
+            padding: 1rem 10rem;
+            font-size: 1.2rem;
+        }
+        .btn {
+            margin: 0;
+            font-family: "Varela Round";
+            text-transform: uppercase;
+            font-size: 80%;
+            letter-spacing: 0.15rem;
+        }
+
+}
