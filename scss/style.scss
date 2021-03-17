@@ -31,7 +31,7 @@
         }
         p {
             color: $tw-50;
-            padding: 1rem 10rem;
+            padding: 1rem;
             font-size: 1.2rem;
         }
         .btn {
@@ -42,4 +42,17 @@
             letter-spacing: 0.15rem;
         }
 
+}
+
+@media screen and (max-width:800px) {
+    .tit-home {
+        h1 {
+            font-size: 4rem;
+        }
+    }
+    .about-section-index {
+        br {
+            display: none;
+        }
+    }
 }
