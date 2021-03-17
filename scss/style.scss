@@ -44,6 +44,17 @@
 
 }
 
+.texto-mision {
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    a:hover {
+        text-decoration: underline;
+        color: $naranja-claro;
+    }
+}
+
 @media screen and (max-width:800px) {
     .tit-home {
         h1 {
@@ -52,6 +63,67 @@
     }
     .about-section-index {
         br {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .tit-home {
+        h1 {
+            font-size: 3.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+    .signup .btn {
+        font-size: 60%;
+    }
+    .signup--tw {
+        font-size: 1.6rem;
+    }
+    .signup .form-inline .form-control {
+        font-size: 60%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .tit-home {
+        h1 {
+            font-size: 3.5rem;
+            letter-spacing: 10px;
+            font-weight: 500;
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    .about-section-index {
+        h2 {
+           font-size: 1.6rem;
+        }
+        p {
+            color: $tw-50;
+        }
+        br {
+            display: block;
+        }
+    }
+    .signup--tw {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width:355px) {
+    .tit-home {
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 5px;
+            font-weight: 500;
+            padding-bottom: 3rem;
+        }
+        p {
             display: none;
         }
     }
